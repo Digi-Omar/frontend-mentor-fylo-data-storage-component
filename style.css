@@ -1,0 +1,185 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./images/bg-mobile.png);
+    font-family: "Raleway", sans-serif;
+    color: #dddbff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+}
+
+
+/* 
+=====================
+FIRST SECTION STYLING 
+=====================
+*/
+.first-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d2c67;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px 100px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.functions{
+    display: flex; 
+}
+
+.functions .icons{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0c122c;
+}
+
+
+/* 
+======================
+SECOND SECTION STYLING 
+======================
+*/
+.second-section{
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: #1d2c67;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    
+}
+
+.progress-bar{
+    margin: 15px 0 10px 0;
+    height: 20px;
+    width: 100%;
+    background-color: #1a254e;
+    border-radius: 50px;  
+}
+
+.bar{
+    height: 100%;
+    width: 75%;
+    background: rgb(255,163,153);
+    background: linear-gradient(90deg, rgba(255,163,153,0.9471988624551383) 20%, rgba(255,77,151,0.9415966215587798) 80%); 
+    border: 2px solid #1a254e;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px;
+}
+
+.point{
+    height: 80%;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.range{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.card{
+    width: 160px; 
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    left: 70px;
+    top: 145px;
+}
+
+.card h1{
+    color: #0c122c;
+    margin-right: 7px;
+    font-size: 1.9rem;
+}
+
+.card p{
+    color: #848794;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* 
+======================
+SECOND SECTION STYLING 
+======================
+*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 30px;
+}
+
+.attribution a { 
+    color: #ffa399; 
+    text-decoration: none;
+
+}
+
+
+
+@media (min-width: 500px){
+    main{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .first-section{
+        width: 40%;
+        margin: 0 20px 0 0px;
+    }
+
+    .second-section{
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    .card{
+        top: -35px;
+        left: 200px;
+        padding: 10px;
+    }
+
+    .triangle{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 30px solid #ffffff;
+        left: 330px;
+        top: 0px;
+    }
+
+}
+
+
+
